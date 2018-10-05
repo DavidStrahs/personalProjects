@@ -1,0 +1,28 @@
+-import mysql.connector 
+-from countries import zyzyzx
+-from cities import city
+-from Continent import Con
+-
+-print "Continent, Country or Railroad"
+-
+-ch = raw_input("Enter Here: ")
+-chl = ch.lower()
+-
+-try:
+-    if chl == "continent":
+-        print "You selected Continents. Choose a Contient: "
+-        w = zyzyzx()
+-        w.retCon()
+-    elif chl == "railroad":
+-        mode = raw_input("mult_track or electric: ")
+-        cont = raw_input("enter a continent: ")
+-        rr = Con()
+-        rr.railRoad(mode,cont)    
+-    elif ch1 == "country":
+-        print "You selected Countries. Enter a country for all the cities within that country: "
+-        o = city()
+-        o.cityPrint()
+-except:
+-    print "Please enter one of the options above"
+-
+-input()

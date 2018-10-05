@@ -1,0 +1,3 @@
+
+while true; do clear; echo "The date and time are\n"; echo $(date '+%D %T'); echo "The outlook for this month is"; cal; 
+sleep 1; done

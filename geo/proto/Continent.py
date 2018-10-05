@@ -1,0 +1,15 @@
+-import mysql.connector
+-
+-class Con:
+-    def continentlist(self):
+-        cnx1 = mysql.connector.connect(user='david', password='marsupial8', database='geography')
+-        cursor1 = cnx1.cursor()
+-        query1 = "SELECT continent FROM countries group by continent;"
+-        cursor1.execute(query1)
+-        
+-        for country1 in cursor1:
+-            x1 = str(country1)
+-            f = x1[3:-3]
+-            print f
+-            
+-        cursor1.close()
